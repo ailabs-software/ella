@@ -1,0 +1,12 @@
+name: ella
+description: An broad library for common tasks like serialisation, classes for maths types, working with dates/times, object lifecycle management. Many classes derive originally from Closure Library.
+version: 0.0.1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  meta: ^1.4.0
+
+dev_dependencies:
+  test: ^1.17.5

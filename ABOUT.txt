@@ -1,0 +1,14 @@
+
+A general purpose library for everyday operations in Dart like working with dates/times, serialisation, resource objects, function binding.
+
+Contains a significant amount of code which was ported from the Google Closure Library (originally to Java, and then to Dart).
+
+https://github.com/google/closure-library
+
+Modifications have been made over time, much of Closure Library is not included, and there have been a lot of classes added which are original.
+
+
+
+
+
+Many of the years developing this code has been whilst listening to Pure Heroine, Melodrama & Solar Power.
