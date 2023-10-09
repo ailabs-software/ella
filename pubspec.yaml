@@ -1,6 +1,7 @@
 name: ella
 description: An broad library for common tasks like serialisation, classes for maths types, working with dates/times, object lifecycle management. Many classes derive originally from Closure Library.
-version: 0.0.1
+version: 1.0.0
+homepage: https://github.com/ailabs-software/ella
 
 environment:
   sdk: '>=3.0.0 <4.0.0'
