@@ -1,6 +1,8 @@
 import "package:test/test.dart";
 import "package:ella/marshal/MarshalledObject.dart";
 
+/** @fileoverview Test for marshalled object equality */
+
 void main()
 {
 

@@ -1,5 +1,5 @@
 
-/** @fileoverview Exports common typedefs & function binding routines. Originally inspired by `goog.bind`. */
+/** @fileoverview Exports common constants, typedefs & function binding routines. Originally inspired by `goog.bind`. */
 
 typedef void VoidFunction();
 
