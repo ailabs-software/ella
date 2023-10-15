@@ -6,3 +6,7 @@ Initial commit
 
 Correct url to repo
 
+## [1.0.2] - 2023-10-14
+
+Add brighten method to RgbColour
+
