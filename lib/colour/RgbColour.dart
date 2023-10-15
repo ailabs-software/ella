@@ -281,6 +281,14 @@ class RgbColour implements ISerialisable
     return Math.max(Math.max(red, green), blue);
   }
 
+  /** @param factor A factor less than 1.0 will darken the colour.
+   *                A factor greater than 1.0 will brighten the colour.
+   */
+  RgbColour brighten(double factor)
+  {
+    return new RgbColour((red * factor).round(), (green * factor).round(), (blue * factor).round());
+  }
+
   /**
   * Get the pure color from the Hue [angle].
   * [angle] is in radians
