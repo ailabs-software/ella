@@ -10,3 +10,5 @@ Correct url to repo
 
 Add brighten method to RgbColour
 
+## [1.0.3] - 2023-10-20
+
