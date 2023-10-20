@@ -247,8 +247,7 @@ class RgbColour implements ISerialisable
   */
   int yiqBrightnessDiff(RgbColour rgb1)
   {
-    return (
-        rgb1.yiqBrightness() - yiqBrightness()).abs();
+    return (rgb1.yiqBrightness() - yiqBrightness()).abs();
   }
 
 
@@ -262,8 +261,7 @@ class RgbColour implements ISerialisable
   */
   int colorDiff(RgbColour rgb1)
   {
-    return (rgb1.red - red).abs() + (rgb1.green - green).abs() +
-        (rgb1.blue - blue).abs();
+    return (rgb1.red - red).abs() + (rgb1.green - green).abs() + (rgb1.blue - blue).abs();
   }
 
   /**
@@ -319,8 +317,7 @@ class RgbColour implements ISerialisable
   /** Operator overloading for Dart API. */
   RgbColour operator *(num value)
   {
-    return new RgbColour(
-        (red * value).toInt(), (green * value).toInt(), (blue * value).toInt());
+    return new RgbColour((red * value).toInt(), (green * value).toInt(), (blue * value).toInt());
   }
 
   RgbColour operator +(RgbColour other)
