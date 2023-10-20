@@ -13,5 +13,5 @@ abstract class IEncoding<T, D>
   D decode(T encodedPayload);
 
   /**  Provide MIME type */
-  String? getContentType();
+  String getContentType();
 }
