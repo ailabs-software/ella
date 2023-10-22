@@ -61,6 +61,9 @@ class MarshalledObject implements ISerialisable
     else if (payload is List) {
       marshaledObject = marshalList(payload).toObject();
     }
+    else if (payload is Enum) {
+      marshaledObject = new MarshalledObject(payload.index);
+    }
     else if (payload is ISerialisable) {
       marshaledObject = new MarshalledObject.emptyObject();
       payload.marshal(marshaledObject);

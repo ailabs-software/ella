@@ -12,3 +12,9 @@ Add brighten method to RgbColour
 
 ## [1.0.3] - 2023-10-20
 
+Make content type required on IEncoding
+
+## [1.0.4] - 2023-10-22
+
+Add enum detection to marshalling type sniffing code
+
