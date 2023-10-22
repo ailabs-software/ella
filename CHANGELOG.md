@@ -18,3 +18,6 @@ Make content type required on IEncoding
 
 Add enum detection to marshalling type sniffing code
 
+## [1.0.5] - 2023-10-22
+
+Add setPropertyFromEnum convenience method

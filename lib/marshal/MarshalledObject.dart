@@ -389,6 +389,12 @@ class MarshalledObject implements ISerialisable
     }
   }
 
+  /** Set property from enum as index */
+  void setPropertyFromEnum(String property, Enum value)
+  {
+    setPropertyUnsafe(property, value.index);
+  }
+
   /** Set property from enum name */
   void setPropertyFromEnumName(String property, Enum value)
   {
