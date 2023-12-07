@@ -381,15 +381,6 @@ abstract class StringUtil
     return codeUnit > 47 && codeUnit < 58;
   }
 
-  /** RegExp used to detect as URL */
-  static RegExp _IS_URL_REGEXP = new RegExp("^(http:\/\/www\.|https:\/\/www\.|http:\/\/|https:\/\/)?[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?\$");
-
-  /** Whether string looks like a URL */
-  static bool isUrl(String value)
-  {
-    return _IS_URL_REGEXP.hasMatch(value);
-  }
-
   /**  Computes ordinal suffix based on number */
   static String ordinalSuffix(int day)
   {
