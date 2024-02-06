@@ -25,3 +25,7 @@ Add setPropertyFromEnum convenience method
 ## [1.0.6] - 2024-2-06
 
 Add words to snake case method
+
+## [1.0.7] - 2024-2-06
+
+Fix so spaces removed in title to snake case method

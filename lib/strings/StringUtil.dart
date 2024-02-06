@@ -583,6 +583,6 @@ abstract class StringUtil
   /** Convert title (a string of words separated by spaces) to snake case. */
   static String titleToSnakeCase(String input)
   {
-    return new _TitleToSnakeCase().convert(input);
+    return new _TitleToSnakeCase().convert(input).replaceAll(" ", "");
   }
 }
