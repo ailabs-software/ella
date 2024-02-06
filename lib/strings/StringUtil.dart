@@ -4,6 +4,49 @@ import "package:ella/math/Arithmetic.dart";
 
 /** @fileoveview String utility library */
 
+abstract class _AbstractToSnakeCase
+{
+  bool shouldUnderscore(int char);
+
+  String convert(String input)
+  {
+    StringBuffer sb = new StringBuffer();
+    bool flag = false;
+    for (int char in input.codeUnits)
+    {
+      if (shouldUnderscore(char)) {
+        if (!flag) {
+          sb.write("_");
+        }
+        flag = true;
+      }
+      else {
+        flag = false;
+      }
+      sb.write( new String.fromCharCode(char).toLowerCase() );
+    }
+    return sb.toString();
+  }
+}
+
+class _CamelCaseToSnakeCase extends _AbstractToSnakeCase
+{
+  @override
+  bool shouldUnderscore(int char)
+  {
+    return StringUtil.isUpperCase(char);
+  }
+}
+
+class _TitleToSnakeCase extends _AbstractToSnakeCase
+{
+  @override
+  bool shouldUnderscore(int char)
+  {
+    return char == 32;
+  }
+}
+
 abstract class StringUtil
 {
   /**
@@ -534,21 +577,12 @@ abstract class StringUtil
    *  This is useful when converting a class field name to a suitable SQL column name. */
   static String camelCaseToSnakeCase(String input)
   {
-    StringBuffer sb = new StringBuffer();
-    bool flag = false;
-    for (int char in input.codeUnits)
-    {
-      if (isUpperCase(char)) {
-        if (!flag) {
-          sb.write("_");
-        }
-        flag = true;
-      }
-      else {
-        flag = false;
-      }
-      sb.write( new String.fromCharCode(char).toLowerCase() );
-    }
-    return sb.toString();
+    return new _CamelCaseToSnakeCase().convert(input);
+  }
+
+  /** Convert title (a string of words separated by spaces) to snake case. */
+  static String titleToSnakeCase(String input)
+  {
+    return new _TitleToSnakeCase().convert(input);
   }
 }
