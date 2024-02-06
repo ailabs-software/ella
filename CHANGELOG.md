@@ -21,3 +21,7 @@ Add enum detection to marshalling type sniffing code
 ## [1.0.5] - 2023-10-22
 
 Add setPropertyFromEnum convenience method
+
+## [1.0.6] - 2024-2-06
+
+Add words to snake case method
